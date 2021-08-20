@@ -1,0 +1,115 @@
+.Nav{
+    background: linear-gradient(to right, #F00B51 0%, #7366FF 100%);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+    padding: 0;
+}
+.NavMenu{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.NavbarContainer{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px ;
+    max-width: 1100px;
+}
+.NavItem{
+    padding: 30px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .3s ease;
+
+}
+.NavItem:hover{
+    transform: scale(1.1);
+}
+.logo{
+    color: white;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.NavLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: .3s ease;
+    padding-bottom: 5px;
+}
+.NavLink:hover{
+    color: white;
+    border-bottom: 2px solid #F00B51;
+}
+.mobileIcon{
+    color: white;
+    display: none;
+}
+li{
+    list-style-type: none;
+}
+@media screen and (max-width: 960px) {
+    .Nav{
+        transition: 0.8s all ease;
+    }
+}
+@media screen and (max-width: 768px) {
+    .NavItem{
+        display: none;
+    }
+    .mobileIcon{
+        display: flex;
+        justify-self: flex-end;
+        font-size: 1.8rem;
+        right: 24px;
+        position: absolute;
+        cursor: pointer;
+        animation-name: infinieRotate;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+    }
+    .NavLink{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .NavItem{
+        padding: 20px 10px;
+    }
+    .NavbarContainer{
+        height: 50px;
+    }
+
+}
+@keyframes infinieRotate {
+    0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		transform: scale(1.2);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+  }
+  

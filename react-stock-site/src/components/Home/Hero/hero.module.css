@@ -1,0 +1,277 @@
+.slide{
+    height: '800px';
+    width: '100%';
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.description{
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    transition: .2s ease;
+    left: 100px;
+    background: linear-gradient(to right, #f00b50c9 0%, #7366ffb7 100%);
+    padding: 50px 40px;
+    animation-name: showdiv;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+}
+.description h1{
+    padding: 10px 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.description p{
+    padding: 10px 0;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.description button{
+    border: 2px solid white;
+    padding: .8rem 1.2rem;
+    border-radius: 40%;
+    cursor: pointer;
+    color: white;
+    background: none;
+    font-size: 1rem;
+    transition: .3s ease;
+    animation-name: infinieRotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.description button:hover{
+    background: white;
+    color: #F00B51;
+}
+
+
+.description2{
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    transition: .2s ease;
+    left: 100px;
+    background: linear-gradient(to right, #f00b50c9 0%, #7366ffb7 100%);
+    padding:50px 40px;
+    animation-name: showdiv;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.description2 h1{
+    padding: 10px 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.description2 p{
+    padding: 10px 0;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.description2 button{
+    border: 2px solid white;
+    padding: .8rem 1.2rem;
+    border-radius: 40%;
+    cursor: pointer;
+    color: white;
+    background: none;
+    font-size: 1rem;
+    transition: .3s ease;
+    animation-name: infinieRotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.description2 button:hover{
+    background: white;
+    color: #F00B51;
+}
+@media screen and (max-width: 786px) {
+    .description2 h1{
+        /* margin-top: 100px; */
+        font-size: 1.4rem;
+    }
+    .description2 p{
+
+        font-size: 12px;
+    }
+    .description2 button{
+
+        font-size: 12px;
+    }
+    .description h1{
+        font-size: 1.4rem;
+    }
+    .description p{
+        font-size: 12px;
+    }
+    .description button{
+        padding: .4rem .6rem;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .description2 h1{
+        padding: 5px 0;
+        font-size: 1.2rem;
+    }
+    .description2{
+        margin-top: 0px;
+    }
+    .description2 p{
+        padding: 4px 0;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .description2 button{
+
+        font-size: 12px;
+    }
+    .description h1{
+        padding: 4px 0;
+        font-size: 1.2rem;
+    }
+    .description p{
+        padding: 4px 0;
+        margin-bottom: 10px 0;
+        font-size: 12px;
+    }
+    .description button{
+        padding: .4rem .6rem;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .slide{
+        height: '300px'!important;
+        width: '100%';
+    }
+    .description2 h1{
+        padding: 5px 0;
+        font-size: 1.2rem;
+    }
+    .description2 p{
+        padding: 4px 0;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .description{
+        left: 50px;
+        padding: 20px 10px;
+    }
+    .description2{
+        margin-top: 0px;
+        left: 50px;
+        padding: 20px 10px;
+    }
+    .description2{
+        height: 254px;
+    }
+    .description2 button{
+        padding: .4rem .6rem;
+        font-size: 12px;
+    }
+    .description h1{
+        padding: 4px 0;
+        font-size: 1.2rem;
+    }
+    .description p{
+        padding: 4px 0;
+        margin-bottom: 10px 0;
+        font-size: 12px;
+    }
+    .description button{
+        padding: .4rem .6rem;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:450px) {
+    .description2 h1{
+        padding: 4px 0;
+        font-size: 1rem;
+    }
+    .description h1{
+        padding: 4px 0;
+        font-size: 1rem;
+    }
+    .description2 p{
+        margin-bottom: 5px;
+    }
+    .description p{
+        margin-bottom: 5px;
+    }
+    .description button{
+        padding: .3rem .4rem;
+        font-size: 10px;
+    }
+    .description2 button{
+        padding: .3rem .4rem;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 375px){
+    .description h1{
+        font-size: .6rem;
+    }
+    .description p{
+        font-size: 8px;
+    }
+    .description button{
+        padding: .2rem .3rem;
+        font-size: 8px;
+    }
+    .description2 h1{
+        font-size: .6rem;
+    }
+    .description2 p{
+        font-size: 8px;
+    }
+    .description2 button{
+        padding: .2rem .3rem;
+        font-size: 8px;
+    }
+}
+@keyframes infinieRotate {
+    0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		transform: scale(1.2);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes showdiv{
+    0%{
+        top: 100%;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}

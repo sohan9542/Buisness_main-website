@@ -1,0 +1,60 @@
+.sidebar{
+    display: none;
+}
+
+.brandImg{
+    height: 50px;
+    width: 150px;
+}
+.icon{
+    color: white;
+    font-size: 2.5rem;
+    right: 20px;
+    position: absolute;
+    top: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.icon:hover{
+    top: 18px;
+    transform: rotate(-360deg);
+    
+}
+.NavItem:hover{
+    transform: scale(1.3);
+    font-size: 2rem;
+}
+.NavItem{
+    margin: 10px 0;
+    transition: .3s ease-in-out;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.NavLink{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        height: 100%;
+        width: 100%;
+        top: 0;   
+        display: flex;
+        background: linear-gradient(to top, #F00B51 0%, #7366FF 100%);
+        z-index: 999;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        transition: .5s ease-in;
+    }
+}
+
